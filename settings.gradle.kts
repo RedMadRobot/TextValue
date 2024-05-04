@@ -24,4 +24,5 @@ rootProject.name = "textvalue-root"
 
 include(
     "textvalue",
+    "textvalue-compose",
 )
