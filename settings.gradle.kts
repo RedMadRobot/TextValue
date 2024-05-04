@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "textvalue-root"
+
+include(
+    "textvalue",
+)
