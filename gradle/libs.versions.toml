@@ -1,5 +1,26 @@
 [versions]
 androidGradlePlugin = "7.4.2"
+annotation = "1.7.1"
+compose-compiler = "1.5.13"
+compose-runtime = "1.6.7"
+compose-ui = "1.6.7"
+detekt = "1.23.6"
+gradle-android-cacheFix = "3.0.1"
+gradle-infrastructure = "0.18.1"
+kotlin = "1.9.23"
+versionsPlugin = "0.51.0"
 
 [libraries]
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose-runtime" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-ui" }
+detekt-gradlePlugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+gradle-android-cacheFixGradlePlugin = { module = "gradle.plugin.org.gradle.android:android-cache-fix-gradle-plugin", version.ref = "gradle-android-cacheFix" }
+infrastructure-android = { module = "com.redmadrobot.build:infrastructure-android", version.ref = "gradle-infrastructure" }
+infrastructure-publish = { module = "com.redmadrobot.build:infrastructure-publish", version.ref = "gradle-infrastructure" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+[plugins]
+infrastructure-detekt = { id = "com.redmadrobot.detekt", version.ref = "gradle-infrastructure" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versionsPlugin" }
