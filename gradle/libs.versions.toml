@@ -1,0 +1,5 @@
+[versions]
+androidGradlePlugin = "7.4.2"
+
+[libraries]
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
