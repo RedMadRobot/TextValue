@@ -2,9 +2,14 @@
 
 *No changes*
 
+## [1.0.1] - 2025.09.24
+
+- Add ability to use arguments with text from resources
+
 ## [1.0.0] - 2024.05.13
 
 - Public release textvalue library and textvalue-compose extensions library
 
-[unreleased]: https://github.com/RedMadRobot/TextValue/compare/1.0.0...main
+[unreleased]: https://github.com/RedMadRobot/TextValue/compare/1.0.1...main
+[1.0.1]: https://github.com/RedMadRobot/TextValue/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/RedMadRobot/TextValue/compare/d5d1d9...1.0.0
