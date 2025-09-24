@@ -25,10 +25,10 @@ repositories {
 
 dependencies {
     // Views version
-    implementation("com.redmadrobot.textvalue:textvalue:1.0.0")
+    implementation("com.redmadrobot.textvalue:textvalue:1.0.1")
 
     // Compose extensions for textvalue
-    implementation("com.redmadrobot.textvalue:textvalue-compose:1.0.0")
+    implementation("com.redmadrobot.textvalue:textvalue-compose:1.0.1")
 }
 ```
 
