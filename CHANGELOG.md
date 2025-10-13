@@ -5,6 +5,8 @@
 ## [1.0.1] - 2025.09.24
 
 - Add ability to use arguments with text from resources
+- Update version of AGP, plugins and libraries
+- Update publishing logic to Maven Central, because [OSSRH](https://central.sonatype.org/pages/ossrh-eol/) has been shut down
 
 ## [1.0.0] - 2024.05.13
 
