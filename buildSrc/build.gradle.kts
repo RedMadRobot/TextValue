@@ -18,4 +18,5 @@ dependencies {
     implementation(libs.kotlin.gradlePlugin)
     implementation(libs.detekt.gradlePlugin)
     implementation(libs.android.gradlePlugin)
+    implementation(libs.publish.gradlePlugin)
 }

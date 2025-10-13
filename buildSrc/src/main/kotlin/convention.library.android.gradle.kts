@@ -6,4 +6,5 @@ plugins {
 
 redmadrobot {
     android.minSdk = 19
+    android.compileSdk = "35"
 }
