@@ -1,4 +1,5 @@
 plugins {
+    alias(libs.plugins.kotlin.compose)
     convention.library.android
 }
 
@@ -11,12 +12,4 @@ dependencies {
 
 android {
     namespace = "$group.compose"
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
-    }
 }

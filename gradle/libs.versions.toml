@@ -1,14 +1,14 @@
 [versions]
-androidGradlePlugin = "7.4.2"
-annotation = "1.7.1"
-compose-compiler = "1.5.13"
-compose-runtime = "1.6.7"
-compose-ui = "1.6.7"
-detekt = "1.23.6"
+androidGradlePlugin = "8.6.0"
+annotation = "1.9.1"
+compose-runtime = "1.7.8"
+compose-ui = "1.7.8"
+detekt = "1.23.8"
 gradle-android-cacheFix = "3.0.1"
 gradle-infrastructure = "0.18.1"
-kotlin = "1.9.23"
-versionsPlugin = "0.51.0"
+kotlin = "2.1.10"
+versionsPlugin = "0.52.0"
+publish-plugin = "0.34.0"
 
 [libraries]
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
@@ -20,7 +20,9 @@ gradle-android-cacheFixGradlePlugin = { module = "gradle.plugin.org.gradle.andro
 infrastructure-android = { module = "com.redmadrobot.build:infrastructure-android", version.ref = "gradle-infrastructure" }
 infrastructure-publish = { module = "com.redmadrobot.build:infrastructure-publish", version.ref = "gradle-infrastructure" }
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+publish-gradlePlugin = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "publish-plugin" }
 
 [plugins]
 infrastructure-detekt = { id = "com.redmadrobot.detekt", version.ref = "gradle-infrastructure" }
 versions = { id = "com.github.ben-manes.versions", version.ref = "versionsPlugin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
