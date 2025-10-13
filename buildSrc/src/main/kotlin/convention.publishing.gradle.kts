@@ -1,24 +1,26 @@
 import com.redmadrobot.build.dsl.*
 
 plugins {
-    id("com.redmadrobot.publish-config")
-    id("com.redmadrobot.publish")
+    id("com.vanniktech.maven.publish")
 }
 
-redmadrobot {
-    publishing {
-        signArtifacts = !isRunningOnCi
-        pom {
-            setGitHubProject("RedMadRobot/TextValue")
+mavenPublishing {
+    publishToMavenCentral(automaticRelease = true)
+    signAllPublications()
 
-            licenses {
-                mit()
-            }
+    pom {
+        name.convention(project.name)
+        description.convention(project.description)
 
-            developers {
-                developer(id = "osipxd", name = "Osip Fatkullin", email = "o.fatkullin@redmadrobot.com")
-                developer(id = "sonulen", name = "Andrey Tolmachev", email = "sonulen@gmail.com")
-            }
+        setGitHubProject("RedMadRobot/TextValue")
+
+        licenses {
+            mit()
+        }
+
+        developers {
+            developer(id = "osipxd", name = "Osip Fatkullin", email = "o.fatkullin@redmadrobot.com")
+            developer(id = "sonulen", name = "Andrey Tolmachev", email = "sonulen@gmail.com")
         }
     }
 }
@@ -26,6 +28,5 @@ redmadrobot {
 publishing {
     repositories {
         if (isRunningOnCi) githubPackages("RedMadRobot/TextValue")
-        if (isReleaseVersion && credentialsExist("ossrh")) ossrh()
     }
 }
