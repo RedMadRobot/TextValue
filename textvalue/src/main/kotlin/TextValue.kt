@@ -40,7 +40,7 @@ public sealed interface TextValue : Parcelable {
     @Parcelize
     public data class Resource(
         @StringRes public val resourceId: Int,
-        public val formatArgs: @RawValue Array<out Any>
+        public val formatArgs: @RawValue Array<out Any> = emptyArray(),
     ) : TextValue {
         @Suppress("SpreadOperator")
         override fun get(resources: Resources): String {
