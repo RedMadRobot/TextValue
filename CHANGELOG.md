@@ -2,6 +2,10 @@
 
 *No changes*
 
+## [1.0.2] - 2025.10.16
+
+- Add default value to formatArgs field in Resource constructor
+
 ## [1.0.1] - 2025.10.15
 
 - Add ability to use arguments with text from resources
@@ -13,6 +17,7 @@
 
 - Public release textvalue library and textvalue-compose extensions library
 
-[unreleased]: https://github.com/RedMadRobot/TextValue/compare/1.0.1...main
+[unreleased]: https://github.com/RedMadRobot/TextValue/compare/1.0.2...main
+[1.0.2]: https://github.com/RedMadRobot/TextValue/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/RedMadRobot/TextValue/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/RedMadRobot/TextValue/compare/d5d1d9...1.0.0
